@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*cores*/
+    --amarelo: #e8b91d;
+    --vermelho: #c2242f;
+    --lilas: #5265e2;
+    --verde: #2cc37f;
+    --cinza-claro: #e4e4e4;
+    --cinza-escuro: #cccccc;
+
+    /*fontes*/
+    --fonte-primaria: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width:0.6rem;
+    background-color: var(--cinza-claro);
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}

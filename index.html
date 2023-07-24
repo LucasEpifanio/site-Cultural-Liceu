@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style/base.css">
+    <link rel="stylesheet" href="./assets/style/menu.css">
+    <link rel="stylesheet" href="./assets/style/banner.css">
+    <link rel="stylesheet" href="./assets/style/categorias.css">
+    <link rel="stylesheet" href="./assets/style/eventos.css">
+    <link rel="stylesheet" href="./assets/style/agenda.css">
+    <link rel="stylesheet" href="./assets/style/maps.css">
+    <link rel="stylesheet" href="./assets/style/footer.css">
+    <link rel="stylesheet" href="./assets/style/estilos-compartilhados.css">
+    <script src="https://kit.fontawesome.com/db74d9e1d4.js" crossorigin="anonymous"></script>
+    <title>Teatro do Liceu</title>
+</head>
+
+<body>
+    <a id="home"></a>
+    <header>
+        <div class="row">
+            <div class="col-auto">
+                <h1>
+                    <a href="#home" class="site-logo">
+                        <img src="/assets/img/logo.svg" alt="Gran Teatre del Liceu" class="logo">
+                    </a>
+                </h1>
+                <div class="icon">
+                    <a href="#" class="btn"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="btn"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="btn"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="click">
+            <label for="click" class="mobile-menu">
+                <img src="assets/img/menu-abrir.png">
+            </label>
+            <ul class="nav-list" id="nav">
+                <li class="menu__item"><a href="#home">
+                        <img src="/assets/img/logo-rodapé.png" alt="Gran Teatre del Liceu" class="logo-responsive">
+                    </a></li>
+                <li class="menu__item"><a href="#programacao">Programação</a></li>
+                <li class="menu__item"> <a href="#categorias">Categorias</a></li>
+                <li class="menu__item"><a href="#eventos">Eventos</a></li>
+                <li class="menu__item"><a href="#">O Liceu</a></li>
+                <li class="menu__item"><a href="#maps">Onde Estamos</a></li>
+                <li class="menu__item"><a href="#agenda"><img src="assets/img/calendario.png" alt="calendario"
+                            class="calendario"></a></li>
+
+                <li class="menu__item menu__pesquisar">
+                    <label class="menu__label" for="pesquisar"><input class="menu__input" type="search" name=""
+                            placeholder="O que você procura?" id="pesquisar"></label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <a id="programacao"></a>
+    <main class="principal">
+
+        <section class="banner">
+            <img src="./assets/img/banner1.png" id="imagens-banner" alt="Banner cor amarela">
+            <img src="./assets/img/banner2.png" id="imagens-banner" alt="Banner cor lilás">
+            <img src="./assets/img/banner3.jpg" id="imagens-banner" alt="Banner cor verde">
+            <img src="./assets/img/banner4.png" id="imagens-banner" alt="Banner cor laranja">
+        </section>
+        <a id="categorias"></a>
+        <section class="categorias">
+            <h2 class="categorias__titulo">Categorias</h2>
+            <ul class="categorias__lista">
+                <li class="categorias__item">Óperas</li>
+                <li class="categorias__item">Danças</li>
+                <li class="categorias__item">Teatros</li>
+                <li class="categorias__item">Exposições</li>
+                <li class="categorias__item">Árias</li>
+                <li class="categorias__item">Concertos</li>
+                <li class="categorias__item">Festivais</li>
+                <li class="categorias__item">Orquestras</li>
+            </ul>
+            <div class="categorias__destaques">
+                <h3 class="destaques__titulo">Destaques:</h3>
+                <div class="destaques__barra"></div>
+                <div class="destaques">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="categorias__imagem" src="assets/img/apresentacao.png">
+                            </div>
+                            <div class="swiper-slide"><img class="categorias__imagem"
+                                    src="assets/img/apresentacao2.jpg">
+                            </div>
+                            <div class="swiper-slide"><img class="categorias__imagem"
+                                    src="assets/img/apresentacao3.jpg">
+                            </div>
+                            <div class="swiper-slide"><img class="categorias__imagem"
+                                    src="assets/img/apresentacao4.png">
+                            </div>
+                            <div class="swiper-slide"><img class="categorias__imagem"
+                                    src="assets/img/apresentacao5.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a id="eventos"></a>
+        <section class="eventos">
+            <h2 class="eventos__titulo">Próximos eventos</h2>
+            <ul class="eventos__lista">
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-1.png" alt="Velas em fundo preto.">
+                    <h3>Elisir do Amor</h3>
+                    <h4>14/08/23</h4>
+                    <h5>Barcelona | Liceu</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-2.png" alt="Pessoas em uma festa">
+                    <h3>Carmen</h3>
+                    <h4>24/09/23</h4>
+                    <h5>Barcelona | Liceu</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-3.png" alt="Sala de cinema">
+                    <h3>Pianista Alvaro Siviero</h3>
+                    <h4>28/08/23</h4>
+                    <h5>Valencia | Palau</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-4.png" alt="Corrida de bicicleta">
+                    <h3>Quarteto de Cordas</h3>
+                    <h4>14/09/23</h4>
+                    <h5>Barcelona | Liceu</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-5.png" alt="Pikachu gigante">
+                    <h3>Obras de Caravaggio</h3>
+                    <h4>04/10/24</h4>
+                    <h5>Sevilla | Museu</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-6.png" alt="Show a céu aberto">
+                    <h3>Obras de Monet</h3>
+                    <h4>10/10/23</h4>
+                    <h5>Barcelona | Liceu</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-7.png" alt="Festival de balões">
+                    <h3>Dom Quixote</h3>
+                    <h4>18/10/23</h4>
+                    <h5>Barcelona | Liceu</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__item">
+                    <img class="imagem-zoom" src="./assets/img/evento-8.png" alt="Sala de cinema">
+                    <h3>A Bela e a Fera</h3>
+                    <h4>24/10/23</h4>
+                    <h5>Valencia | Palau</h5>
+                    <button>+ Info</button>
+                </li>
+                <li class="eventos__botao"><button>Ver mais</button></li>
+            </ul>
+        </section>
+        <a id="agenda"></a>
+        <section class="agenda">
+            <h2 class="agenda__titulo">Coloque na sua agenda!</h2>
+            <ul class="agenda__lista">
+                <li class="agenda__item">
+                    <img class="img-agenda" src="./assets/img/agenda-1.png" alt="Sala de cinema">
+                    <div class="agenda__informacoes">
+                        <h3>Julho</h3>
+                        <h4>27 (Domingo)</h4>
+                        <h5>20:30</h5>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>Quarteto de cordas Os Clássicos</h6>
+                        <button>Reserva</button>
+                    </div>
+                </li>
+                <li class="agenda__item">
+                    <img class="img-agenda" src="./assets/img/agenda-2.png" alt="Sala de cinema">
+                    <div class="agenda__informacoes">
+                        <h3>agosto</h3>
+                        <h4>01 (sexta)</h4>
+                        <h5>20:00</h5>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>Ópera La Bohème | Puccini</h6>
+                        <button>Reserva</button>
+                    </div>
+                </li>
+                <li class="agenda__item">
+                    <img class="img-agenda" src="./assets/img/agenda-3.png" alt="Festival de balões">
+                    <div class="agenda__informacoes">
+                        <h3>agosto</h3>
+                        <h4>02 (Sábado)</h4>
+                        <h5>20:30</h5>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>Pianista chinês Lang Lang</h6>
+                        <button>Reserva</button>
+                    </div>
+                </li>
+                <li class="agenda__item">
+                    <img class="img-agenda" src="./assets/img/agenda-4.png" alt="Cantor de rock">
+                    <div class="agenda__informacoes">
+                        <h3>agosto</h3>
+                        <h4>03 (domingo)</h4>
+                        <h5>20:00</h5>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>Concerto Tchaikovsky </h6>
+                        <button>Reserva</button>
+                    </div>
+                </li>
+                <li class="agenda__item">
+                    <img class="img-agenda" src="./assets/img/agenda-5.png" alt="Bailarinas no palco">
+                    <div class="agenda__informacoes">
+                        <h3>agosto</h3>
+                        <h4>06 (quarta)</h4>
+                        <h5>20:30</h5>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>Balé Municipal Lago dos Cisnes</h6>
+                        <button>Reserva</button>
+                    </div>
+                </li>
+                <li class="agenda__item">
+                    <img class="img-agenda" src="./assets/img/agenda-6.png" alt="Show a céu aberto">
+                    <div class="agenda__informacoes">
+                        <h3>agosto</h3>
+                        <h4>08 (sexta)</h4>
+                        <h5>20:00</h5>
+                    </div>
+                    <div class="agenda__atracao">
+                        <h6>A Garota do Regimento</h6>
+                        <button>Reserva</button>
+                    </div>
+                </li>
+                <li class="agenda__botao"><button>Ver mais</button></li>
+            </ul>
+        </section>
+        <a id="maps"></a>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.718658253836!2d2.170719875795938!3d41.38019687130087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2580540cc5b%3A0xa05d8e0a1059639d!2sGrande%20Teatro%20do%20Liceu!5e0!3m2!1spt-PT!2spt!4v1690195202105!5m2!1spt-PT!2spt"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+    <footer class="rodape">
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Eventos</h3>
+            </li>
+            <li><a href="#">Música e festas</a></li>
+            <li><a href="#">Cursos e workshops</a></li>
+            <li><a href="#">Congresso</a></li>
+            <li><a href="#">Religioso</a></li>
+            <li><a href="#">Online</a></li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Turnês</h3>
+            </li>
+            <li><a href="#">Madrid</a></li>
+            <li><a href="#">Barcelona</a></li>
+            <li><a href="#">Valencia</a></li>
+            <li><a href="#">Sevilla</a></li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Categorias</h3>
+            </li>
+            <li><a href="#">Óperas</a></li>
+            <li><a href="#">Dança</a></li>
+            <li><a href="#">Teatro</a></li>
+            <li><a href="#">Exposições</a></li>
+            <li><a href="#">Árias</a></li>
+            <li><a href="#">Concertos</a></li>
+            <li><a href="#">Festivais</a></li>
+            <li><a href="#">Orquestras</a></li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Sobre nós</h3>
+            </li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Localização</a></li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Programação</h3>
+            </li>
+            <li><a href="#">Calendário</a></li>
+        </ul>
+        <ul class="rodape__lista">
+            <li>
+                <h3 class="rodape__titulo">Redes Sociais</h3>
+            </li>
+            <li><a href="#" class="btn-footer"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" class="btn-footer"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" class="btn-footer"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" class="btn-footer"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <div class="rodape__logo">
+            <a href="#" class="logo-rodape">
+                <img src="/assets/img/logo-rodapé.png" alt="Gran Teatre del Liceu" class="logo-rodape">
+            </a>
+            <p>Desenvolvido por <br>Lucas Epifanio.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

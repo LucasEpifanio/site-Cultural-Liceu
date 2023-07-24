@@ -1,0 +1,58 @@
+/* Footer */
+
+.rodape {
+    color: var(--cinza-claro);
+    background-color:var(--vermelho);
+    margin: 1rem 0;
+    font-size: 14px;
+    font-family: var(--fonte-primaria);
+    padding: 1rem 1.5rem;
+    line-height: 2;
+    white-space: nowrap;
+}
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__lista {
+    width: 8rem;
+}
+
+.rodape__lista a{
+    color: var(--cinza-escuro);
+    font-size: 0.9rem;
+}
+.rodape__lista a:hover{
+    color: var(--cinza-claro);
+}
+
+.rodape__titulo {
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+}
+
+.rodape__logo {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.logo-rodape{
+    width: 4rem;
+    height: 100%;
+}
+
+.rodape__logo{
+    align-self: end;
+}
+
+.btn-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-footer .fa-brands{
+    color: var(--cinza-claro);
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}

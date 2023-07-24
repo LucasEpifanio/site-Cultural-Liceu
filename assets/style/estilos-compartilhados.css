@@ -1,0 +1,102 @@
+/*Estilos compartilhados*/
+.categorias__titulo,
+.destaques__titulo,
+.eventos__titulo,
+.agenda__titulo {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: var(--fonte-primaria);
+}
+
+section{
+    padding: 1rem 0rem;
+}
+
+
+@media(min-width: 720px) {
+
+    /* Header */
+
+    .cabecalho__seu-local::before {
+        padding-right: 8px;
+    }
+
+    .cabecalho__seu-local::after {
+        padding-left: 15px;
+    }
+
+    .menu__pesquisar {
+        width: 15rem;
+    }
+
+    /*main*/
+
+    .principal {
+        padding: 0 2.5rem;
+    }
+
+    /* Categorias */
+    .categorias__lista {
+        height: 304px;
+    }
+
+    .destaques__barra {
+        width: 417.96px;
+    }
+
+    /* Agenda */
+
+    .agenda__item {
+        width: 308px;
+    }
+
+    /* Rodapé */
+
+    .rodape {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    
+
+    /*main*/
+
+    .principal {
+        padding: 0 5rem;
+    }
+
+    /*categorias*/
+    .categorias {
+        margin-bottom: 1.5rem;
+    }
+
+    .categorias__imagem {
+        height: 224px;
+        margin-bottom: 0;
+        background-position-y: bottom;
+    }
+
+    /*Eventos*/
+
+    .eventos__item {
+        width: 280px;
+    }
+
+    /*Agenda*/
+
+    .agenda__item {
+        width: 330px;
+    }
+
+    /* Rodapé */
+
+    .rodape {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+
+}

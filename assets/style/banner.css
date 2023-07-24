@@ -1,0 +1,53 @@
+/*banner*/
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#imagens-banner {
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#imagens-banner:hover {
+    filter: saturate(125%);
+}
+.principal {
+    padding: 0 1.5rem;
+}
+
+
+.banner {
+    display: grid;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+.banner img:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.banner img:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+
+@media (min-width:720px) {
+
+    .banner {
+        grid-template-columns: calc(50% - 0.75rem) auto auto;
+        column-gap: 1.5rem;
+    }
+
+    .banner img:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .banner img:nth-child(4) {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+}
