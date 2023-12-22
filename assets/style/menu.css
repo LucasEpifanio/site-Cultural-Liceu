@@ -107,11 +107,6 @@ left: 92%;
 z-index: 999;
 }
 
-/*animações*/
-.icon, .site-logo{
-    visibility: hidden;
-}
-
 
 @media(min-width: 1000px){
     .nav-list.rolagem{
